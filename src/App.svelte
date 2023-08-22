@@ -4,6 +4,7 @@
   import { Router, Link, Route } from "svelte-navigator";
   import Home from "./pages/Home.svelte";
   import Player from "./pages/Player.svelte";
+  import Request from "./pages/Request.svelte";
 
 </script>
 
@@ -26,6 +27,9 @@
   <div>
     <Route path="/">
       <Home />
+    </Route>
+    <Route path="/request">
+      <Request />
     </Route>
     <Route path="player/:id" let:params>
       <Player query={params.id} />

@@ -1,4 +1,6 @@
 <script>
+  import {Link} from 'svelte-navigator'
+
   import Semua from '../lib/components/Semua.svelte';
   import Jepang from '../lib/components/Jepang.svelte';
   import Barat from '../lib/components/Barat.svelte';
@@ -43,6 +45,9 @@
 </style>
 
  <div class="mt-3">  
+  <Link to="/request" class="text-red"
+  style="text-decoration: none;"
+  >Request Bokep Disini</Link>
   <h5 style="font-weight: bold;">Pilih Genre Bokep</h5>
 <div class="tabs-container ">
   {#each tabs as tab, index}
