@@ -80,12 +80,12 @@
     {#each relatedVideos as relatedVideo (relatedVideo.id)}
       <div class="col-lg-3 col-md-4 col-12">
         <div class="card p-2 m-2 shadow">
-          <Link to={`/player/${relatedVideo.file_code}`}>
+          <a href={`/player/${relatedVideo.file_code}`}>
             <img src={relatedVideo.single_img} alt={relatedVideo.title} style="max-width: 100%;">
             <p style="font-weight: bold; font-size: 16px">{relatedVideo.title}</p>
       <p style="font-weight: bold;">Di tonton: {relatedVideo.views}</p>
       <p>Di upload : {formatUploadDate(relatedVideo.uploaded)}</p>
-          </Link>
+          </a>
         </div>
       </div>
     {/each}
