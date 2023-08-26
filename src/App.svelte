@@ -18,6 +18,14 @@
 
     <Navbar />
 
+<div class="container mt-2">
+  <div style="background-color: #d13063;color:white;padding:10px">
+  Perhatian !! . kami sudah memasukkan video request bokep kalian
+  di tab bagian "Request Kalian" . kami akan selalu mengupdate Bokep Begizi Setiap hari
+</div>
+</div>
+
+
 <Router>
   <!-- <nav>
     <Link to="/">Home</Link>
