@@ -8,6 +8,9 @@
   import Semi from '../lib/components/Semi.svelte';
   import Anal from '../lib/components/Anal.svelte';
   import Arab from '../lib/components/Arab.svelte';
+  import Pijat from '../lib/components/Pijat.svelte';
+  import Permintaan from '../lib/components/Permintaan.svelte';
+
   let activeTabIndex = 0;
 
   const tabs = [
@@ -17,7 +20,9 @@
     { label: 'Indo', component: Indo },
     { label: 'Semi', component: Semi },
     { label: 'Anal', component: Anal },
+    { label: 'Pijat', component: Pijat },
     { label: 'Muslim', component: Arab },
+    { label: 'Request Kalian', component: Permintaan },
   ];
 
   function setActiveTab(index) {
