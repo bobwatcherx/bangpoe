@@ -6,7 +6,8 @@ style="background-color: #1366eb;color:white;padding:10px">
 </div>
 
 <div>
-	<marquee style="font-weight: bold;">Kami Akan Selalu Upload Bokep Setiap Hari !!.
-		bagi yang Sudah request bokep . harap buka tab "permintaan" kami sudah memasukkan video nya disana . selamat mengentot boss !!
+	<marquee style="font-weight: bold;">
+		Yang Sudah Request Bokep . Bisa Cek di Tab "Request Kalian".
+		dan kami akan upload bokep setiap hari. jadi harap pantau setiap hari boss !!.
 	</marquee>
 </div>

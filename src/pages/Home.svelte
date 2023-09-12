@@ -62,7 +62,15 @@
   <Link to="/request" class="text-red"
   style="text-decoration: none;"
   >Request Bokep Disini</Link>
+
+  <div style="display:flex;justify-content:space-between">
   <h5 style="font-weight: bold;">Pilih Genre Bokep</h5>
+  <a href="https://saweria.co/bobwatcherx"
+  style="font-weight: bold;color: purple;" target="_blank"
+  >DONASI Mimin</a>
+    
+  </div>
+
 <div class="tabs-container ">
   {#each tabs as tab, index}
     <div
