@@ -3,8 +3,8 @@
   import { navigate } from 'svelte-navigator'; // Import svelte-routing's navigate function
    import {apiurl} from '../../configapi/api.js'
 
-  const fld_id = 1004785
-  const titlepage = "Pijat Minyak"
+  const fld_id = 1022208
+  const titlepage = "Bokep Bocil"
   let posts = [];
   let currentPage = 1;
   let totalPages = 167; // Ganti sesuai dengan total halaman yang Anda dapatkan dari API
@@ -86,8 +86,8 @@
             <div class="card p-2 m-2 shadow" on:click={() => navigateToPlayer(post.file_code)}>
               <img src={post.single_img} alt={post.title} style="max-width: 100%;">
               <p style="font-weight: bold; font-size: 16px">{post.title}</p>
-               <p style=" font-size: 13px">Ditonton : {post.views}</p>
-                <p style=" font-size: 13px">Diupload : {post.uploaded}</p>
+              <p style=" font-size: 13px">Ditonton : {post.views}</p>
+              <p style=" font-size: 13px">Diupload : {post.uploaded}</p>
             </div>
           </div>
         {/each}

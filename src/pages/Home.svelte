@@ -9,6 +9,10 @@
   import Anal from '../lib/components/Anal.svelte';
   import Arab from '../lib/components/Arab.svelte';
   import Pijat from '../lib/components/Pijat.svelte';
+  import Bocil from '../lib/components/Bocil.svelte';
+  import Colmek from '../lib/components/Colmek.svelte';
+  import Omek from '../lib/components/Omek.svelte';
+  import Squirt from '../lib/components/Squirt.svelte';
   import Permintaan from '../lib/components/Permintaan.svelte';
 
   let activeTabIndex = 0;
@@ -18,6 +22,10 @@
     { label: 'Jepang', component: Jepang },
     { label: 'Barat', component: Barat },
     { label: 'Indo', component: Indo },
+    { label: 'Bocil', component: Bocil },
+    { label: 'Colmek', component: Colmek },
+    { label: 'Omek', component: Omek },
+    { label: 'Squirt', component: Squirt },
     { label: 'Semi', component: Semi },
     { label: 'Anal', component: Anal },
     { label: 'Pijat', component: Pijat },

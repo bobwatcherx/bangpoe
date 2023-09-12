@@ -2,6 +2,9 @@
   import { onMount } from 'svelte';
   import { navigate } from 'svelte-navigator'; // Import svelte-routing's navigate function
 
+  import {apiurl} from '../../configapi/api.js'
+
+
   let posts = [];
   let currentPage = 1;
   let totalPages = 167; // Ganti sesuai dengan total halaman yang Anda dapatkan dari API
@@ -9,7 +12,7 @@
   let totalData = 0; // Inisialisasi variabel totalData
 
   async function fetchPosts(page) {
-    const response = await fetch(`https://bobwatcherx-baruserverbokep.hf.space/posts/?page=${page}&per_page=65`);
+    const response = await fetch(`${apiurl}/posts/?page=${page}&per_page=65`);
     const data = await response.json();
     totalData = data.total_data; // Update totalData dengan nilai dari respons API
     return data.data;
@@ -83,6 +86,8 @@
             <div class="card p-2 m-2 shadow" on:click={() => navigateToPlayer(post.file_code)}>
               <img src={post.single_img} alt={post.title} style="max-width: 100%;">
               <p style="font-weight: bold; font-size: 16px">{post.title}</p>
+              <p style="font-size: 16px">Ditonton : {post.views}</p>
+              <p style="font-size: 13px">Diupload : {post.uploaded}</p>
             </div>
           </div>
         {/each}
