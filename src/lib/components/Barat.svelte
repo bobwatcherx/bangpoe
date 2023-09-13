@@ -59,18 +59,9 @@
 </script>
 
 
-<style>
-  .card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 100%;
-    max-width: 300px; /* Adjust as needed */
-  }
- 
-</style>
 
-<div class="m-2 mt-4">
+
+<div class=" mt-4">
   {#if isLoading}
     <div style="display: flex; justify-content: center;">
       <div class="spinner-border text-danger" role="status" style="width: 8rem; height: 8rem;"></div>
@@ -84,11 +75,13 @@
       <div class="row">
         {#each posts as post (post.id)}
           <div class="col-lg-3 col-md-4 col-12">
-            <div class="card p-2 m-2 shadow" on:click={() => navigateToPlayer(post.file_code)}>
+            <div class="card shadow" on:click={() => navigateToPlayer(post.file_code)}>
               <img src={post.single_img} alt={post.title} style="max-width: 100%;">
-              <p style="font-weight: bold; font-size: 15px">{post.title}</p>
+              <div class="p-2">
+                <p style="font-weight: bold; font-size: 15px">{post.title}</p>
               <p style=" font-size: 13px">Ditonton : {post.views}</p>
                <p style=" font-size: 13px">Diupload : {post.uploaded}</p>
+              </div>
             </div>
           </div>
         {/each}
