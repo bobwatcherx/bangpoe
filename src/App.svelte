@@ -35,7 +35,7 @@
       <Request />
     </Route>
     <Route path="player/:id" let:params>
-      <Player query={params.id} />
+      <Player id={params.id} />
     </Route>
   </div>
 </Router>

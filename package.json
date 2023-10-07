@@ -21,6 +21,7 @@
   "dependencies": {
     "bootstrap": "^5.3.1",
     "svelte-navigator": "^3.2.2",
-    "sveltestrap": "^5.11.1"
+    "sveltestrap": "^5.11.1",
+    "sweetalert2": "^11.7.32"
   }
 }
