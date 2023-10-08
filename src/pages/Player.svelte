@@ -86,7 +86,7 @@ function gotoplayer(myid){
     </div>
   {:else}
     <div class="mt-3">
-      <iframe src={`https://doods.pro/e/${id}`} width="100%" height="300px" frameborder="0" allowfullscreen allowscrolling="no"></iframe>
+      <iframe src={`https://ds2play.com/e/${id}`} width="100%" height="300px" frameborder="0" allowfullscreen allowscrolling="no"></iframe>
        <a href={`http://ouo.io/qs/nvM0IVNA?s=https://doodstream.co/d/${id}`} target="_blank" 
        class="btn btn-primary text-white"
        style="font-weight: bold;width:100%"
