@@ -4,7 +4,6 @@
     import Swal from 'sweetalert2'
 
  import {apiurl} from '../configapi/api.js'
-let directlink = "https://www.highcpmrevenuegate.com/w49w9gey2?key=2722eb58e1097c6545b889a3a048ef08"
 
 
   let videoDetails = null;
@@ -45,25 +44,9 @@ let directlink = "https://www.highcpmrevenuegate.com/w49w9gey2?key=2722eb58e1097
 
 function gotoplayer(myid){
   id = myid;
-    const choices = [1,2,3,4] 
-  const randomChoice = choices[Math.floor(Math.random() * choices.length)];
-  console.log(randomChoice)
-  if (randomChoice === 3) {
-    Swal.fire({
-        icon: 'success',
-        title: 'Kamu Iklan Dulu Bos',
-        text: 'Sesaat lagi kamu akan iklan dulu......',
-        footer: 'kami bisa kembali lagi ke web ini setelah iklan..'
-      })
-    setTimeout(() => {
-        navigate(directlink);
-      }, 3000);
-  } else {
+   navigate("/player/" + id);
+fetchRelatedVideos();
     
-    navigate("/player/" + id);
-  }
-
-    fetchRelatedVideos();
 }
 </script>
 
