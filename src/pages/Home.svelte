@@ -2,91 +2,21 @@
   import {Link} from 'svelte-navigator'
 
   import Semua from '../lib/components/Semua.svelte';
-  import Jepang from '../lib/components/Jepang.svelte';
-  import Barat from '../lib/components/Barat.svelte';
-  import Indo from '../lib/components/Indo.svelte';
-  import Semi from '../lib/components/Semi.svelte';
-  import Anal from '../lib/components/Anal.svelte';
-  import Arab from '../lib/components/Arab.svelte';
-  import Pijat from '../lib/components/Pijat.svelte';
-  import Bocil from '../lib/components/Bocil.svelte';
-  import Colmek from '../lib/components/Colmek.svelte';
-  import Omek from '../lib/components/Omek.svelte';
-  import Squirt from '../lib/components/Squirt.svelte';
-  import Permintaan from '../lib/components/Permintaan.svelte';
-
-  let activeTabIndex = 0;
-
-  const tabs = [
-    { label: 'Semua ', component: Semua },
-    { label: 'Jepang', component: Jepang },
-    { label: 'Barat', component: Barat },
-    { label: 'Indo', component: Indo },
-    { label: 'Bocil', component: Bocil },
-    { label: 'Colmek', component: Colmek },
-    { label: 'Omek', component: Omek },
-    { label: 'Squirt', component: Squirt },
-    { label: 'Semi', component: Semi },
-    { label: 'Anal', component: Anal },
-    { label: 'Pijat', component: Pijat },
-    { label: 'Muslim', component: Arab },
-    { label: 'Request Kalian', component: Permintaan },
-  ];
-
-  function setActiveTab(index) {
-    activeTabIndex = index;
-  }
 </script>
 
-<style>
-  .tabs-container {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
 
-  .tab {
-    padding: 10px 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-bottom: none;
-  }
+ <div class="mt-3 ">  
 
-  .tab.active {
-    background-color: #ccc;
-  }
-</style>
-  
-
- <div class="mt-3">  
+  <div style="display:flex;justify-content:space-between">
   <Link to="/request" class="text-red"
   style="text-decoration: none;"
   >Request Bokep Disini</Link>
-
-  <div style="display:flex;justify-content:space-between">
-  <h5 style="font-weight: bold;">Pilih Genre Bokep</h5>
   <a href="https://saweria.co/bobwatcherx"
   style="font-weight: bold;color: purple;" target="_blank"
   >DONASI Mimin</a>
     
   </div>
-
-<div class="tabs-container ">
-  {#each tabs as tab, index}
-    <div
-      class="tab {activeTabIndex === index && 'active'}"
-      on:click={() => setActiveTab(index)}
-    >
-      {tab.label}
-    </div>
-  {/each}
+<div>
+  <Semua/>
 </div>
-
-{#each tabs as tab, index}
-  {#if activeTabIndex === index}
-    <div class="m-2 mt-4">
-      <svelte:component this={tab.component} />
-    </div>
-  {/if}
-{/each}
 </div>
