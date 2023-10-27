@@ -72,6 +72,11 @@
           <div class="col-lg-3 col-md-4 col-12">
             <div class="card  shadow" on:click={() => navigateToPlayer(post.filecode)}>
               <div class="p-2">
+                <img src={post.thumbnails[5].url}
+                style="width:100%;background-size:cover;
+                border: none;
+                " 
+                >
                 <p style="font-weight: bold; font-size: 16px">{post.name}</p>
                 <p style="font-size: 16px">Diupload : {post.uploaded}</p>
                 <div style="display:flex;justify-content:end">
