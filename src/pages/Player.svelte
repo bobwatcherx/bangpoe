@@ -61,8 +61,9 @@ fetchRelatedVideos();
   }
 </style>
 
-  <div class="mt-2"> 
+  <div class="m-2" style="display:flex;justify-content:space-evenly;"> 
   <Link to="/" class="btn btn-primary text-white">Kembali</Link>
+  <Link to="/request" class="btn btn-danger text-white">Request BOKEP</Link>
   </div>
   
 
@@ -81,7 +82,7 @@ fetchRelatedVideos();
        "
        rel="noopener noreferrer">Download Bokep</a>
        <p style="font-size: 15px;color:red;
-       text-align: center;
+       text-align: center;font-weight: bold;
        ">Lewatin Iklan ouo.io kalo mau download bokep cuy</p>
     </div>
     <!-- RELATED -->

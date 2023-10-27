@@ -79,6 +79,7 @@
                 >
                 <p style="font-weight: bold; font-size: 16px">{post.name}</p>
                 <p style="font-size: 16px">Diupload : {post.uploaded}</p>
+                <p style="font-size: 14px">Uang : {post.file_money}</p>
                 <div style="display:flex;justify-content:end">
                   <Link to={`/player/${post.filecode}`}
                   class="btn btn-primary"

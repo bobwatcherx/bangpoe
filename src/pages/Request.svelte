@@ -1,9 +1,9 @@
 <script >
-	import {Link} from 'svelte-navigator'
+	import {Link,navigate} from 'svelte-navigator'
 </script>
 
 <div class="container mt-3">
-	<Link to="/" class="btn btn-primary">Kembali</Link>
+	<button on:click={()=>navigate(-1)} class="btn btn-primary">Kembali</button>
 
 	<div class="card shadow p-2 mt-2">
 		<p>Sayang Anak Sayang Bokep .
@@ -13,5 +13,5 @@
 	
 	</div>
 	
-	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-_La7SpyLj32Y2s2S8-MencIfRmYVSBiQAGbdUUmWT5BtmQ/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+	<iframe src="https://bobwatcherx.github.io/requestbo/" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
 </div>
