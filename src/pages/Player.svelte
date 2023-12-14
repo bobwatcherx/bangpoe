@@ -75,7 +75,7 @@ fetchRelatedVideos();
   {:else}
     <div class="mt-3">
       <iframe src={`https://voe.sx/e/${id}`} width="100%" height="330px" frameborder="0" allowfullscreen allowscrolling="no"></iframe>
-       <a href={`http://ouo.io/qs/nvM0IVNA?s=https://voe.sx/${id}`} target="_blank" 
+       <a href={`https://cuty.io/quick?token=3c2f8445e662326c2ebcd8d60&url=https://voe.sx/${id}`} target="_blank" 
        class="btn text-white"
        style="font-weight: bold;width:100%;
        background-color: #13157d;color:white
