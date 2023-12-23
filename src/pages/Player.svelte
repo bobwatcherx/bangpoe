@@ -3,7 +3,7 @@
   import { Link,navigate } from 'svelte-navigator'; // Import svelte-routing's useParams function
     import Swal from 'sweetalert2'
 
- const apiurl = 'https://voe.sx/api/file/list?key=Wr7fjmWTBp6EY0XGYJZwleaMJiJ2cuf21c3UvSpDd7GtPLAVnQTGiY9RNtwCyCbK';
+ const apiurl = 'https://corsany-1-g0403094.deta.app/https://voe.sx/api/file/list?key=Wr7fjmWTBp6EY0XGYJZwleaMJiJ2cuf21c3UvSpDd7GtPLAVnQTGiY9RNtwCyCbK';
 
   let videoDetails = null;
   let relatedVideos = [];
