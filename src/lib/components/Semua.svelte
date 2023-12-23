@@ -11,7 +11,7 @@
   let totalData = 0; // Inisialisasi variabel totalData
 
   async function fetchPosts(page) {
-    const response = await fetch(`https://voe.sx/api/file/list?key=Wr7fjmWTBp6EY0XGYJZwleaMJiJ2cuf21c3UvSpDd7GtPLAVnQTGiY9RNtwCyCbK&page=${page}&per_page=35`);
+    const response = await fetch(`https://corsany-1-g0403094.deta.app/https://voe.sx/api/file/list?key=Wr7fjmWTBp6EY0XGYJZwleaMJiJ2cuf21c3UvSpDd7GtPLAVnQTGiY9RNtwCyCbK&page=${page}&per_page=35`);
     const data = await response.json();
     totalData = data.result.total; // Update totalData dengan nilai dari respons API
     return data.result.data;
